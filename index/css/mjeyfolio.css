@@ -49,8 +49,8 @@ html {
 
 html,
 body {
-    display: block;
-    width: 100%;
+    /* display: block; */
+    min-width: 320px;
     /* height: 100vh; */
     margin: 0;
 
@@ -72,15 +72,15 @@ body {
     transform: translate(-50%, -50%);
     font-weight: bold;
     top: 50%;
-    left: 33%;
+    left: 7%;
     display: block;
     position: absolute;
     max-width: 225px;
     text-transform: uppercase;
-    font-size: 4.6em;
+    font-size: 2.1em;
     margin: 0;
-    line-height: 75px;
-    letter-spacing: 4px;
+    line-height: 43px;
+    letter-spacing: 0;
 }
 
 .title {
@@ -94,26 +94,27 @@ body {
 .container span {
     transform: skew(-10deg);
     display: block;
-    width: 350%;
+    float: left;
+    width: 160%;
     position: relative;
 }
 
 
 .container span:nth-child(1) {
     color: rgb(189, 153, 98);
-    text-shadow: 5px 5px rgb(225, 200, 163);
+    text-shadow: 3px 4px rgb(225, 200, 163);
 
 }
 
 .container span:nth-child(2) {
     color: rgb(165, 131, 72);
-    text-shadow: 5px 4px rgb(218, 188, 141);
+    text-shadow: 3px 4px rgb(218, 188, 141);
     margin: 10px 0;
 }
 
 .container span:nth-child(3) {
     color: rgb(141, 109, 58);
-    text-shadow: 5px 4px rgb(204, 183, 145);
+    text-shadow: 3px 4px rgb(204, 183, 145);
 }
 
 /* --------------------------------main--------------------------------------- */
@@ -131,10 +132,10 @@ body {
 
 
 div.subject {
-    font-size: 490%;
+    font-size: 235%;
     text-align: center;
     position: relative;
-    top: -35%;
+    top: -41%;
     /* left: 185px; */
     color: rgba(165, 131, 72, 0.5);
 }
@@ -142,9 +143,11 @@ div.subject {
 .sub1 {
     display: flex;
     align-items: center;
+    flex-direction: column;
     position: absolute;
-    top: 25%;
-    left: 20%;
+    top: 18%;
+    left: 5%;
+
 }
 
 .effect-wrap {
@@ -160,7 +163,7 @@ div.subject {
 }
 
 .effect6 img {
-    width: 740px;
+    width: 382px;
     transition: all 0.3s ease;
 }
 
@@ -230,7 +233,8 @@ div.explain2 {
     word-break: keep-all;
     color: black;
     text-align: center;
-    width: 350px;
+    width: 367px;
+    margin-top: 15px;
 }
 
 div.explain>div,
@@ -240,18 +244,18 @@ div.explain2>div {
 
 .ver {
     font-size: 11px;
-    padding-right: 111px;
+    padding-right: 109px;
     color: rgb(182, 158, 124);
 }
 
 .line {
-    width: 80%;
+    width: 100%;
     border-bottom: 2px solid rgb(61, 50, 33);
-    padding-bottom: 17px;
+    padding-bottom: 10px;
 }
 
 div.mal {
-    line-height: 19px;
+    line-height: 16px;
     font-size: 14px;
     color: rgb(61, 50, 33);
     font-family: 'GowunDodum-Regular';
@@ -260,38 +264,63 @@ div.mal {
 
 .explain div.cro,
 .explain2 div.cro {
-    margin: 10px 0 10px;
+    margin: 10px 0 10px;    
 }
-
+.cro,
+.sec,
+.pro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cro {
+    padding-bottom: 3%;
+}
+.sec {
+    padding-bottom: 4%;
+}
+.sec,
+.pro {
+    display: flex;
+    align-items: center;
+}
 .explain div.pro,
 .explain2 div.pro {
     border-bottom: 2px solid rgb(61, 50, 33);
-    width: 80%;
+    width: 100%;
     padding-bottom: 12px;
 
 }
-
+.nuuu,
+.icons {
+    width: 63%;
+    margin: 0 auto;
+}
 .ma {
-    font-size: 18px;
+    font-size: 14px;
     font-family: 'ghanachoco';
     color: rgb(158 132 86);
 }
 
 .mma {
-    font-size: 14px;
-    margin-top: 5px;
+    font-size: 11px;
+    margin-top: 0;
     font-family: 'GowunDodum-Regular';
     color: black;
 
 }
 
 .icons img {
-    width: 8%;
+    width: 16%;
     margin: 0 10px;
 }
+
 .icons2 img{
-    width: 10%;
-    margin: 0 10px;
+    width: 14%;
+    margin: 0 3px;
+}
+.icons2 {
+    width: 52%;
 }
 div.buttons {
     display: flex;
@@ -362,10 +391,10 @@ div.button:hover {
 }
 
 div.subject2 {
-    font-size: 110px;
+    font-size: 57px;
     text-align: center;
     position: relative;
-    top: -38%;
+    top: -40%;
     font-family: 'ghanachoco';
     color: rgba(255, 255, 255, 0.7);
 
@@ -389,27 +418,23 @@ div.subject2 {
 }
 
 .line2 {
-    position: relative;
-    top: -39%;
-    border-top: 2px solid #936b46;
-    width: 76%;
-
+    display: none;
 }
 
 div.info {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 73%;
+    flex-direction: column;
+    align-items: center;
+    width: 78%;
     position: absolute;
-    top: 53%;
+    top: 35%;
 }
 
 .wrapper {
     width: 100%;
     font-family: 'ghanachoco';
     margin: 0 auto;
-    height: 100%;
+    height: 21%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     
@@ -421,11 +446,11 @@ div.info {
     text-transform: uppercase;
     -webkit-transform: translate(-50%, -50%) skew(-10deg, 0);
     transform: translate(-50%, -50%) skew(-10deg, 0);
-    top: 30%;
+    top: 18%;
     left: 50%;
     margin: 0;
     position: absolute;
-    font-size: 9vw;
+    font-size: 19vw;
     font-weight: 400;
     white-space: nowrap;
     color: #f9d8af;
@@ -470,9 +495,9 @@ div.info {
 }
 
 div.name2 {
-    font-size: 230%;
+    font-size: 163%;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 13px;
     color: #936b46;
 
 }
@@ -491,15 +516,23 @@ div.aboutme {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    font-size: 122%;
+    font-size: 95%;
     color: #291f15;
-       
+    line-height: 112%;
 }
 .info2,
 .info4 {
     width: 257px;
 }
 
+.info3{
+    margin: 40px 0;
+} 
+.name2 {
+    border-bottom: 2px solid #936b46;
+    width: 100%;
+    padding-bottom: 4%;
+}
 div.info .aboutme2 {
     display: flex;
     flex-direction: row;
@@ -507,5 +540,5 @@ div.info .aboutme2 {
 }
 
 div.info .aboutme2 img {
-    width: 42px;
+    width: 32px;
 }
